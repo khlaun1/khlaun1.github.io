@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- ═════════════ HEADER ═════════════ -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-6">
+        <h1 class="text-2xl font-bold">
+          <a href="#hero" class="hover:text-indigo-600 transition">
+            Your&nbsp;Name
+          </a>
+        </h1>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#projects" class="hover:text-indigo-600">Projects</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ═════════════ HERO ═════════════ -->
+    <section
+      id="hero"
+      class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white text-center"
+    >
+      <div class="max-w-6xl mx-auto py-32 px-6">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-4">
+          Hi, I'm Your&nbsp;Name
+        </h2>
+        <p class="text-lg md:text-2xl max-w-3xl mx-auto">
+          A short tagline or role — e.g. "AI Researcher &amp; Full‑Stack
+          Developer"
+        </p>
+      </div>
+    </section>
+
+    <!-- ═════════════ ABOUT ═════════════ -->
+    <section id="about" class="max-w-4xl mx-auto py-20 px-6">
+      <h2 class="text-3xl font-bold mb-6">About&nbsp;Me</h2>
+      <p class="leading-relaxed text-lg">
+        Write a concise bio here. Highlight your background, interests, and the
+        kind of work you're passionate about. Use <strong>bold</strong> or
+        <em>italic</em> emphasis sparingly to keep the paragraph readable.
+      </p>
+    </section>
+
+    <!-- ═════════════ PROJECTS ═════════════ -->
+    <section id="projects" class="bg-gray-200 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+
+        <div
+          class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          aria-label="Project cards"
+        >
+          <!-- Project Card Template -->
+          <article class="bg-white rounded-2xl shadow p-6 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">Project&nbsp;Title</h3>
+            <p class="flex-grow text-sm md:text-base">
+              Short description of what the project does, technologies used,
+              and your role. Keep it around 2–3 sentences.
+            </p>
+            <a
+              href="#"
+              class="mt-4 inline-block text-indigo-600 hover:underline font-medium text-sm"
+              >View on GitHub →</a
+            >
+          </article>
+          <!-- ▽ Duplicate <article> blocks for more projects ▽ -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════ CONTACT ═════════════ -->
+    <section id="contact" class="max-w-4xl mx-auto py-20 px-6">
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <p class="text-lg">
+        Feel free to reach out via
+        <a href="mailto:you@example.com" class="text-indigo-600">email</a>
+        or find me on
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          class="text-indigo-600"
+          >LinkedIn</a
+        >.
+      </p>
+    </section>
+
+    <!-- ═════════════ FOOTER ═════════════ -->
+    <footer class="bg-white border-t py-6 text-center">
+      <p class="text-sm text-gray-600">
+        © <span id="year"></span> Your&nbsp;Name. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- ═════════════ SCRIPTS ═════════════ -->
+    <script>
+      // Dynamic year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <!-- ═════════════ APP SCRIPT (compiled from TypeScript) ═════════════ -->
+    <script type="module" src="dist/main.js"></script>
+  </body>
+</html>
